@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>uz.pdp.g34jdbcwithservlet.servet.auth.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/auth/signup</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>uz.pdp.g34jdbcwithservlet.servet.auth.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/auth/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UsersServlet</servlet-name>
+        <servlet-class>uz.pdp.g34jdbcwithservlet.servet.UsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <servlet-class>uz.pdp.g34jdbcwithservlet.servet.UserUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <url-pattern>/users/update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UsersDeleteServlet</servlet-name>
+        <servlet-class>uz.pdp.g34jdbcwithservlet.servet.UsersDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsersDeleteServlet</servlet-name>
+        <url-pattern>/users/delete</url-pattern>
+    </servlet-mapping>
+</web-app>
